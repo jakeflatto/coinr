@@ -1,0 +1,22 @@
+{
+  "name": "coinr",
+  "version": "1.0.0",
+  "description": "Cryptocurrency Optimizer for Investment and Return",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakeflatto/coinr.git"
+  },
+  "author": "Paul DiLoreto & Jake Flatto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakeflatto/coinr/issues"
+  },
+  "homepage": "https://github.com/jakeflatto/coinr#readme",
+  "dependencies": {
+    "cryptocompare": "^0.3.0"
+  }
+}
