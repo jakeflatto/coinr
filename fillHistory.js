@@ -6,7 +6,6 @@ const DynamoDB = new AWS.DynamoDB.DocumentClient({
 });
 
 const limit = 2000;
-let currentTimestamp = new Date('1/1/18').getTime();
 const decrementValue = 3600 * 2001 * 1000;
 
 let params = {
@@ -16,37 +15,38 @@ let params = {
 let count = 0;
 
 const timer = function(currentFSym, currentTSym, currentExchange) {
+	let currentTimestamp = new Date('Mon, 01 Jan 2018 00:00:00 GMT').getTime();
+	let iterationsCount = 0
 	return new Promise((resolve, reject) => {
 		let timer = setInterval(() => {
 			apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchange).then(dataList => {
-				currentTimestamp -= decrementValue;
-				console.log('Made API Call');
-				
+				iterationsCount++;
+				console.log(dataList.length);
 				// When done
-				if(!dataList.length) {
+				if(dataList.length < 2001) {
 					clearInterval(timer);
-					resolve(true);
-					console.log(`FINISHED combo ${currentExchange}-${currentTSym}-${currentFSym}`);
+					resolve(dataList.length+2001*(iterationsCount-1));
+					console.log(`FINISHED at ${currentTimestamp/1000}`);
 				} else {
 					let info = dataList.slice();
+					currentTimestamp -= decrementValue;
 					console.log(`${new Date(info.pop().hour_marker).toUTCString()} - ${new Date(info.shift().hour_marker).toUTCString()}`);
-					
-					// Write to Database
-					dataList.forEach(item => {
-						params.Item = item;
-						DynamoDB.put(params, (err, data) => {
-							if(err) {
-								console.error(`Dynamo Fail`);
-								reject(err);
-							}
-						});
-					});
 				}
+				// Write to Database
+				// dataList.forEach(item => {
+				// 	params.Item = item;
+				// 	DynamoDB.put(params, (err, data) => {
+				// 		if(err) {
+				// 			console.error(`Dynamo Fail`);
+				// 			reject(err);
+				// 		}
+				// 	});
+				// });
 			}).catch(err => {
 				console.error('FAILED API Call');
 				reject(err);
 			});
-		}, 10000);
+		}, 5000);
 	});
 };
 module.exports = timer;
@@ -56,7 +56,7 @@ function apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchang
 		CryptoAPI.histoHour(currentFSym, currentTSym, { limit, timestamp: new Date(currentTimestamp), exchange: currentExchange })
 		.then(data => {
 			if(!data.length) {
-				resolve(`ENDED HISTORY ${currentTimestamp}-For:${currentFSym}-To:${currentTSym}`);
+				resolve([]);
 				return;
 			}
 			let formatData = data.map(obj => {
@@ -73,7 +73,7 @@ function apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchang
 					volume_traded_with: obj.volumeto,
 					volume_traded_for: obj.volumefrom
 				};
-			});
+			}).filter(obj => !!obj.high);
 			resolve(formatData);
 		}).catch(err => {
 			reject(err);
