@@ -25,10 +25,12 @@ fsymsUSD.forEach(currentFSym => {
 function recursivelyRun(index) {
 	return new Promise((resolve, reject) => {
 		let combo = combinations[index];
+		console.log(`${index+1}/${combinations.length}`);
+		console.log(`${combo.exchange}-${combo.tsym}-${combo.fsym}`);
 		if(!combo)
 			resolve(true);
 		else {
-			fillHistory(combo.fsym, combo.tsym, combo.exchange).then(nextCombo => {
+			fillHistory(combo.fsym, combo.tsym, combo.exchange).then(() => {
 				recursivelyRun(index+1).then(() => {
 					resolve(true);
 				});
@@ -40,7 +42,7 @@ function recursivelyRun(index) {
 }
 
 // Started from the bottom
-recursivelyRun(77).then(finalRes => {
+recursivelyRun(0).then(finalRes => {
 	console.log('COMPLETELY FINISHED!!');
 	process.exit();
 }).catch(err => {
