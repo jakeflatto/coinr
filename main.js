@@ -39,7 +39,7 @@ function recursivelyRun(index) {
 		else {
 			console.log(`${index+1}/${combinations.length}`);
 			console.log(`${combo.exchange}-${combo.tsym}-${combo.fsym}`);
-			fillHistory(combo.fsym, combo.tsym, combo.exchange).then( rowCount => {
+			fillHistory(combo.fsym, combo.tsym, combo.exchange).then(rowCount => {
 				totalRows += rowCount;
 				console.log(`Rows Added: ${rowCount}`);
 				console.log(`Running Total: ${totalRows}`);
@@ -48,6 +48,7 @@ function recursivelyRun(index) {
 					resolve(true);
 				});
 			}).catch(err => {
+				console.log(err);
 				reject(err);
 			});
 		}
@@ -55,7 +56,7 @@ function recursivelyRun(index) {
 }
 
 // Started from the bottom
-recursivelyRun(0).then(finalRes => {
+recursivelyRun(0).then(() => {
 	console.log('COMPLETELY FINISHED!!');
 	console.log(`Total Rows: ${totalRows}`);
 	process.exit();
