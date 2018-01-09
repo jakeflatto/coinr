@@ -61,29 +61,56 @@ module.exports = timer;
 
 function apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchange) {
 	return new Promise((resolve, reject) => {
-		CryptoAPI.histoHour(currentFSym, currentTSym, { limit, timestamp: new Date(currentTimestamp), exchange: currentExchange })
-		.then(data => {
-			if(!data.length) {
-				resolve([]);
-				return;
-			}
-			let formatData = data.map(obj => {
-				return {
-					hour_marker: obj.time * 1000,
-					traded_with: currentTSym,
-					traded_for: currentFSym,
-					exchange: currentExchange,
-					open: obj.open,
-					high: obj.high,
-					low: obj.low,
-					close: obj.close,
-					volume_traded_with: obj.volumeto,
-					volume_traded_for: obj.volumefrom
-				};
-			}).filter(obj => !!obj.high);
+			let formatData;
 			resolve(formatData);
 		}).catch(err => {
 			reject(err);
 		});
 	});
+};
+
+function submitPostgres(data) {
+	let formattedValues = data.map(obj => {
+		return {
+			time: obj.time,
+			exchange: currentExchange,
+			traded_with: currentTSym,
+			traded_for: currentFSym,
+			open: obj.open,
+			high: obj.high,
+			low: obj.low,
+			close: obj.close,
+			volume_traded_with: obj.volumeto,
+			volume_traded_for: obj.volumefrom
+		};
+	}).filter(obj => obj.high).map(obj => formatValue(obj));
+	
+	let query = formatQuery(formattedValues);
+	
+	client.query(query, (err, res) => {
+		if(err)
+			console.log('FUCK! SHIT!');
+		else {
+			// TODO probably other shit
+			console.log('Yeee boyy');
+		}
+	});
+};
+
+function formatQuery(values) {
+	return `INSERT INTO price_histories_hourly VALUES ${values.join(',')};`;
+}
+
+function formatValue(obj) {
+	// console.log(obj);
+	return `(TIMESTAMP '${new Date(obj.time*1000).toISOString().replace('T',' ').replace('Z','')}',
+	'${obj.exchange}',
+	'${obj.traded_with}',
+	'${obj.traded_for}',
+	${obj.open}::numeric,
+	${obj.high},
+	${obj.low},
+	${obj.close},
+	${obj.volume_traded_with},
+	${obj.volume_traded_for})`.replace(/\s+/g, ' ');
 };
