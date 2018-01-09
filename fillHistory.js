@@ -12,40 +12,55 @@ client.connect();
 
 const limit = 2000;
 const decrementValue = 3600 * 2001 * 1000;
+const startTimestamp = new Date('Mon, 01 Jan 2018 00:00:00 GMT').getTime();
+let rowCount;
 
-module.exports = function(currentFSym, currentTSym, currentExchange) {
-	let currentTimestamp = new Date('Mon, 01 Jan 2018 00:00:00 GMT').getTime();
-	let rowCount = 0;
+function fillHistory(currentFSym, currentTSym, currentExchange) {
 	return new Promise((resolve, reject) => {
-		let timer = setInterval(() => {
-			apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchange).then(dataList => {
-				rowCount += dataList.length;
-				currentTimestamp -= decrementValue;
-				
-				// When no more history, finish up
-				if(!dataList.length) {
-					clearInterval(timer);
-					console.log(`FINISHED at toTs=${currentTimestamp/1000}`);
-					resolve(rowCount);
-					return;
-				}
-				
-				// Write to Database
-				submitPostgres(dataList).then(() => {
-					let info = dataList.slice();
-					console.log(dataList.length);
-					console.log(`${new Date(info[info.length-1].hour_marker).toUTCString()} - ${new Date(info[0].hour_marker).toUTCString()}`);
+		rowCount=0;
+		recursivelyCall(currentFSym, currentTSym, startTimestamp, currentExchange).then(finalCount => {
+			resolve(finalCount);
+		}).catch(err => {
+			reject(err);
+		})
+	});
+};
+module.exports = fillHistory;
+
+function recursivelyCall(currentFSym, currentTSym, currentTimestamp, currentExchange) {
+	return new Promise((resolve, reject) => {
+		apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchange).then(dataList => {
+			rowCount += dataList.length;
+			currentTimestamp -= decrementValue;
+			
+			// When no more history, finish up
+			if(!dataList.length) {
+				console.log(`FINISHED at toTs=${currentTimestamp/1000}`);
+				resolve(rowCount);
+				return;
+			}
+			
+			// Write to Database
+			submitPostgres(dataList).then(() => {
+				let info = dataList.slice();
+				console.log(dataList.length);
+				console.log(`${new Date(info[info.length-1].hour_marker).toUTCString()} - ${new Date(info[0].hour_marker).toUTCString()}`);
+				recursivelyCall(currentFSym, currentTSym, currentTimestamp, currentExchange).then(nextCount => {
+					resolve(nextCount);
 				}).catch(err => {
-					console.log(`Postgres failed at Iteration ${Math.floor(rowCount/2001)}`);
+					console.log('Recursive API call failed.');
 					reject(err);
 				});
 			}).catch(err => {
-				console.error(`FAILED API Call at Iteration ${Math.floor(rowCount/2001)}`);
+				console.log(`Postgres failed at Iteration ${Math.floor(rowCount/2001)}`);
 				reject(err);
 			});
-		}, 500);
+		}).catch(err => {
+			console.error(`FAILED API Call at Iteration ${Math.floor(rowCount/2001)}`);
+			reject(err);
+		});
 	});
-};
+}
 
 function apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchange) {
 	return new Promise((resolve, reject) => {

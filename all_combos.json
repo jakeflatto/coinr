@@ -1,0 +1,192 @@
+[
+  {
+	fsym: 'BCH',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'BTC',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'BTG',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'DASH',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'EOS',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'ETH',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'IOT',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'LSK',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'LTC',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'NEO',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'QTUM',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'STRAT',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'SUB',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'TRX',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'XLM',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'XMR',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'XRP',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'XVG',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'ZEC',
+	tsym: 'BTC',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'BCH',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'BTC',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'BTG',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'DASH',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'EOS',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'ETH',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'IOT',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'LSK',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'LTC',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'NEO',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'QTUM',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'STRAT',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'SUB',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'TRX',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'XLM',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'XMR',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'XRP',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'XVG',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  },
+  {
+	fsym: 'ZEC',
+	tsym: 'ETH',
+	exchange: 'CCCAGG'
+  }
+]

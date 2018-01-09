@@ -1,51 +1,39 @@
 const fillHistory = require('./fillHistory');
-
-// Settings
-const fsymsTether = [ 'BTC', 'ETH', 'LTC', 'BCH', 'NEO' ];
-const fsymsUSD = [ 'BTC', 'ETH', 'LTC' ]; // For USD loop
-const fsyms = [ 'ADA', 'ARK', 'BCH', 'BTG', 'DASH', 'EOS', 'IOT', 'LSK', 'LTC', 'NEO', 'QTUM', 'STRAT', 'SUB', 'TRX', 'XLM', 'XMR', 'XRP', 'XVG', 'ZEC' ];
-const tsyms = [ 'BTC', 'ETH' ];
-const exchanges = [ 'Binance', 'CCCAGG' ];
+const fs = require('fs');
 
 // Fills out all combinations
 let combinations = [];
-exchanges.forEach(currentExchange => {
-	tsyms.forEach(currentTSym => {
-		fsyms.forEach(currentFSym => {
-			combinations.push({ fsym: currentFSym, tsym: currentTSym, exchange: currentExchange });
-		});
+// TODO make promise
+combinations = new Promise((resolve, reject) => {
+	fs.readFile('./combos.json', (err, data) => {
+		if(err)
+			reject(err);
+		else
+			resolve(JSON.parse(data));
 	});
 });
-fsymsUSD.forEach(currentFSym => {
-	const currentTSym = 'USD';
-	const currentExchange = 'CCCAGG';
-	combinations.push({ fsym: currentFSym, tsym: currentTSym, exchange: currentExchange });
-});
-exchanges.forEach(currentExchange => {
-	const currentTSym = 'USDT';
-	fsymsTether.forEach(currentFSym => {
-		combinations.push({ fsym: currentFSym, tsym: currentTSym, exchange: currentExchange });
-	});
-});
+
+
 
 let totalRows = 0;
 
 // Recursively run through every combination
-function recursivelyRun(index) {
+function recursivelyRun(combo, index) {
 	return new Promise((resolve, reject) => {
-		let combo = combinations[index];
 		if(!combo)
 			resolve(true);
 		else {
-			console.log(`${index+1}/${combinations.length}`);
+			console.log(`${index+1}/${combo.length}`);
 			console.log(`${combo.exchange}-${combo.tsym}-${combo.fsym}`);
 			fillHistory(combo.fsym, combo.tsym, combo.exchange).then(rowCount => {
 				totalRows += rowCount;
 				console.log(`Rows Added: ${rowCount}`);
 				console.log(`Running Total: ${totalRows}`);
 				console.log('------------------');
-				recursivelyRun(index+1).then(() => {
+				recursivelyRun(combo, index+1).then(() => {
 					resolve(true);
+				}).catch(err => {
+					reject(err);
 				});
 			}).catch(err => {
 				reject(err);
@@ -55,13 +43,16 @@ function recursivelyRun(index) {
 }
 
 // Started from the bottom
-recursivelyRun(0).then(() => {
-	console.log('COMPLETELY FINISHED!!');
-	console.log(`Total Rows: ${totalRows}`);
-	process.exit();
-}).catch(err => {
-	console.log(err);
-	process.exit();
+combinations.then(combo => {
+	console.log(combo);
+	// recursivelyRun(combo, 0).then(() => {
+	// 	console.log('COMPLETELY FINISHED!!');
+	// 	console.log(`Total Rows: ${totalRows}`);
+	// 	process.exit();
+	// }).catch(err => {
+	// 	console.log(err);
+	// 	process.exit();
+	// });
 });
 // Now we're here
 
