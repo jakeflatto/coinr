@@ -48,7 +48,6 @@ function recursivelyRun(index) {
 					resolve(true);
 				});
 			}).catch(err => {
-				console.log(err);
 				reject(err);
 			});
 		}
@@ -61,7 +60,7 @@ recursivelyRun(0).then(() => {
 	console.log(`Total Rows: ${totalRows}`);
 	process.exit();
 }).catch(err => {
-	console.error(err);
+	console.log(err);
 	process.exit();
 });
 // Now we're here
