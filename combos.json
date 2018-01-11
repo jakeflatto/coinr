@@ -1,7 +1,7 @@
 [
   {
-	fsym: 'BCH',
-	tsym: 'BTC',
-	exchange: 'Poloniex'
+	"fsym": "ADA",
+	"tsym": "BTC",
+	"exchange": "Binance"
   }
 ]

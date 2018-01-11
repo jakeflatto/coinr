@@ -41,7 +41,7 @@ function recursivelyCall(currentFSym, currentTSym, currentTimestamp, currentExch
 			}
 			
 			// Write to Database
-			submitPostgres(dataList).then(() => {
+			// submitPostgres(dataList).then(() => {
 				let info = dataList.slice();
 				console.log(dataList.length);
 				console.log(`${new Date(info[info.length-1].hour_marker).toUTCString()} - ${new Date(info[0].hour_marker).toUTCString()}`);
@@ -51,10 +51,10 @@ function recursivelyCall(currentFSym, currentTSym, currentTimestamp, currentExch
 					console.log('Recursive API call failed.');
 					reject(err);
 				});
-			}).catch(err => {
-				console.log(`Postgres failed at Iteration ${Math.floor(rowCount/2001)}`);
-				reject(err);
-			});
+			// }).catch(err => {
+			// 	console.log(`Postgres failed at Iteration ${Math.floor(rowCount/2001)}`);
+			// 	reject(err);
+			// });
 		}).catch(err => {
 			console.error(`FAILED API Call at Iteration ${Math.floor(rowCount/2001)}`);
 			reject(err);
