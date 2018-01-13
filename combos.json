@@ -11,6 +11,11 @@
   },
   {
 	"exchange": "Bittrex",
+	"fsym": "EMC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "Bittrex",
 	"fsym": "ZEC",
 	"tsym": "BTC"
   },
@@ -81,11 +86,6 @@
   },
   {
 	"exchange": "Bittrex",
-	"fsym": "ETH",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Bittrex",
 	"fsym": "FCT",
 	"tsym": "ETH"
   },
@@ -121,11 +121,6 @@
   },
   {
 	"exchange": "Bittrex",
-	"fsym": "NEO",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Bittrex",
 	"fsym": "CVC",
 	"tsym": "BTC"
   },
@@ -133,11 +128,6 @@
 	"exchange": "Bittrex",
 	"fsym": "ETH",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "Bittrex",
-	"fsym": "BTC",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Bittrex",
@@ -176,11 +166,6 @@
   },
   {
 	"exchange": "Bittrex",
-	"fsym": "DASH",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Bittrex",
 	"fsym": "GNO",
 	"tsym": "ETH"
   },
@@ -208,11 +193,6 @@
 	"exchange": "Bittrex",
 	"fsym": "ETC",
 	"tsym": "ETH"
-  },
-  {
-	"exchange": "Bittrex",
-	"fsym": "XRP",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Bittrex",
@@ -246,11 +226,6 @@
   },
   {
 	"exchange": "Bittrex",
-	"fsym": "LTC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Bittrex",
 	"fsym": "XVG",
 	"tsym": "BTC"
   },
@@ -266,18 +241,8 @@
   },
   {
 	"exchange": "Bittrex",
-	"fsym": "XMR",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Bittrex",
 	"fsym": "PIVX",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "Bittrex",
-	"fsym": "OMG",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Bittrex",
@@ -353,16 +318,6 @@
 	"exchange": "Bittrex",
 	"fsym": "DGB",
 	"tsym": "ETH"
-  },
-  {
-	"exchange": "Bittrex",
-	"fsym": "ETC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Bittrex",
-	"fsym": "ZEC",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Bittrex",
@@ -421,11 +376,6 @@
   },
   {
 	"exchange": "Poloniex",
-	"fsym": "LTC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Poloniex",
 	"fsym": "BTS",
 	"tsym": "BTC"
   },
@@ -443,11 +393,6 @@
 	"exchange": "Poloniex",
 	"fsym": "NXT",
 	"tsym": "XMR"
-  },
-  {
-	"exchange": "Poloniex",
-	"fsym": "NXT",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Poloniex",
@@ -473,11 +418,6 @@
 	"exchange": "Poloniex",
 	"fsym": "STEEM",
 	"tsym": "ETH"
-  },
-  {
-	"exchange": "Poloniex",
-	"fsym": "ETH",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Poloniex",
@@ -531,11 +471,6 @@
   },
   {
 	"exchange": "Poloniex",
-	"fsym": "XMR",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Poloniex",
 	"fsym": "GAME",
 	"tsym": "BTC"
   },
@@ -546,11 +481,6 @@
   },
   {
 	"exchange": "Poloniex",
-	"fsym": "ETC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Poloniex",
 	"fsym": "FCT",
 	"tsym": "BTC"
   },
@@ -558,11 +488,6 @@
 	"exchange": "Poloniex",
 	"fsym": "STRAT",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "Poloniex",
-	"fsym": "BTC",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Poloniex",
@@ -606,23 +531,8 @@
   },
   {
 	"exchange": "Poloniex",
-	"fsym": "XLM",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Poloniex",
 	"fsym": "GNO",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "Poloniex",
-	"fsym": "REP",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Poloniex",
-	"fsym": "DASH",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Poloniex",
@@ -666,11 +576,6 @@
   },
   {
 	"exchange": "Poloniex",
-	"fsym": "ZEC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Poloniex",
 	"fsym": "XEM",
 	"tsym": "BTC"
   },
@@ -693,11 +598,6 @@
 	"exchange": "Poloniex",
 	"fsym": "ZRX",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "Poloniex",
-	"fsym": "XRP",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Poloniex",
@@ -751,11 +651,6 @@
   },
   {
 	"exchange": "Bithumb",
-	"fsym": "QTUM",
-	"tsym": "KRW"
-  },
-  {
-	"exchange": "Bithumb",
 	"fsym": "LTC",
 	"tsym": "KRW"
   },
@@ -763,11 +658,6 @@
 	"exchange": "Bithumb",
 	"fsym": "ZEC",
 	"tsym": "KRW"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "BNT",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -783,11 +673,6 @@
 	"exchange": "HitBTC",
 	"fsym": "TRX",
 	"tsym": "ETH"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "ETC",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -826,11 +711,6 @@
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "LTC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
 	"fsym": "ZEC",
 	"tsym": "BTC"
   },
@@ -851,18 +731,8 @@
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "EOS",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
 	"fsym": "MAID",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "DASH",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -886,11 +756,6 @@
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "ETH",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
 	"fsym": "REP",
 	"tsym": "BTC"
   },
@@ -903,16 +768,6 @@
 	"exchange": "HitBTC",
 	"fsym": "ZRX",
 	"tsym": "ETH"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "DOGE",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "MAID",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -946,18 +801,13 @@
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "VEN",
+	"fsym": "EMC",
 	"tsym": "BTC"
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "BCN",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "STRAT",
-	"tsym": "USDT"
+	"fsym": "VEN",
+	"tsym": "BTC"
   },
   {
 	"exchange": "HitBTC",
@@ -968,16 +818,6 @@
 	"exchange": "HitBTC",
 	"fsym": "ARDR",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "XEM",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "NXT",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -998,11 +838,6 @@
 	"exchange": "HitBTC",
 	"fsym": "XDN",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "FUN",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -1031,11 +866,6 @@
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "BTC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
 	"fsym": "WTC",
 	"tsym": "BTC"
   },
@@ -1061,11 +891,6 @@
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "ZRX",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
 	"fsym": "VERI",
 	"tsym": "ETH"
   },
@@ -1086,23 +911,8 @@
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "ZEC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
 	"fsym": "DGB",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "SAN",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "VERI",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -1116,11 +926,6 @@
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "XVG",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
 	"fsym": "SNT",
 	"tsym": "BTC"
   },
@@ -1128,11 +933,6 @@
 	"exchange": "HitBTC",
 	"fsym": "EOS",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "DCN",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -1156,33 +956,8 @@
   },
   {
 	"exchange": "HitBTC",
-	"fsym": "DGB",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "XMR",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "VEN",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
 	"fsym": "PPT",
 	"tsym": "ETH"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "CVC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "XDN",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -1198,16 +973,6 @@
 	"exchange": "HitBTC",
 	"fsym": "DCN",
 	"tsym": "ETH"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "TRX",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "NEO",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -1265,11 +1030,6 @@
 	"tsym": "KRW"
   },
   {
-	"exchange": "Korbit",
-	"fsym": "XRP",
-	"tsym": "KRW"
-  },
-  {
 	"exchange": "Kraken",
 	"fsym": "BTC",
 	"tsym": "JPY"
@@ -1521,11 +1281,6 @@
   },
   {
 	"exchange": "Bitfinex",
-	"fsym": "SAN",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Bitfinex",
 	"fsym": "NEO",
 	"tsym": "ETH"
   },
@@ -1543,11 +1298,6 @@
 	"exchange": "Bitfinex",
 	"fsym": "NEO",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "Bitfinex",
-	"fsym": "SAN",
-	"tsym": "ETH"
   },
   {
 	"exchange": "Bitfinex",
@@ -1572,11 +1322,6 @@
   {
 	"exchange": "Bitfinex",
 	"fsym": "NEO",
-	"tsym": "USD"
-  },
-  {
-	"exchange": "Bitfinex",
-	"fsym": "SAN",
 	"tsym": "USD"
   },
   {
@@ -1668,11 +1413,6 @@
 	"exchange": "GDAX",
 	"fsym": "LTC",
 	"tsym": "USD"
-  },
-  {
-	"exchange": "Poloniex",
-	"fsym": "BCH",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Poloniex",
@@ -1742,22 +1482,12 @@
   {
 	"exchange": "HitBTC",
 	"fsym": "BTG",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "BTG",
 	"tsym": "ETH"
   },
   {
 	"exchange": "HitBTC",
 	"fsym": "BCH",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "BCH",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -1803,11 +1533,6 @@
 	"exchange": "Binance",
 	"fsym": "STRAT",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "Binance",
-	"fsym": "ETH",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Binance",
@@ -1888,11 +1613,6 @@
 	"exchange": "Binance",
 	"fsym": "XVG",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "Binance",
-	"fsym": "BTC",
-	"tsym": "USDT"
   },
   {
 	"exchange": "Binance",
@@ -1977,11 +1697,6 @@
   {
 	"exchange": "HitBTC",
 	"fsym": "ICX",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "ICX",
 	"tsym": "ETH"
   },
   {
@@ -1998,11 +1713,6 @@
 	"exchange": "HitBTC",
 	"fsym": "ICX",
 	"tsym": "BTC"
-  },
-  {
-	"exchange": "HitBTC",
-	"fsym": "SUB",
-	"tsym": "USDT"
   },
   {
 	"exchange": "HitBTC",
@@ -2127,11 +1837,6 @@
   {
 	"exchange": "Okex",
 	"fsym": "ELF",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Okex",
-	"fsym": "ELF",
 	"tsym": "ETH"
   },
   {
@@ -2175,296 +1880,6 @@
 	"tsym": "ETH"
   },
   {
-	"exchange": "Huobi",
-	"fsym": "QTUM",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ETH",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "BTC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "BCH",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "XRP",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "XRP",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "WAX",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "LTC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "LTC",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ETH",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "CVC",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "VEN",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "QTUM",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ETC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "HSR",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "KNC",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ZEC",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "VEN",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "GAS",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "BAT",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "HSR",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "EOS",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "WAX",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "QTUM",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "BCH",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "OMG",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "EOS",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ETC",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "OMG",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "NEO",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "BTG",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "SNT",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "DASH",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "SALT",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "EOS",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "DASH",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "NAS",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ZEC",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "NAS",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "HSR",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "CVC",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "PAY",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "GAS",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "GNT",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ELF",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "DGD",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "QASH",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ZRX",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ELF",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "QASH",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "PAY",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "BAT",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "SALT",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "OMG",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "GNT",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "DGD",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Binance",
-	"fsym": "ETHOS",
-	"tsym": "BTC"
-  },
-  {
-	"exchange": "Binance",
-	"fsym": "ETHOS",
-	"tsym": "ETH"
-  },
-  {
 	"exchange": "Okex",
 	"fsym": "ICX",
 	"tsym": "BTC"
@@ -2473,21 +1888,6 @@
 	"exchange": "Okex",
 	"fsym": "ICX",
 	"tsym": "ETH"
-  },
-  {
-	"exchange": "Okex",
-	"fsym": "ICX",
-	"tsym": "USDT"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ICX",
-	"tsym": "ETH"
-  },
-  {
-	"exchange": "Huobi",
-	"fsym": "ICX",
-	"tsym": "BTC"
   },
   {
 	"exchange": "Binance",
@@ -2498,11 +1898,6 @@
 	"exchange": "Binance",
 	"fsym": "TRX",
 	"tsym": "ETH"
-  },
-  {
-	"exchange": "Bithumb",
-	"fsym": "EOS",
-	"tsym": "KRW"
   },
   {
 	"exchange": "Binance",
@@ -2731,6 +2126,1176 @@
   },
   {
 	"exchange": "Binance",
+	"fsym": "XLM",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "MONA",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "FCT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LTC",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "KMD",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XZC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SC",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "PIVX",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "OMG",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "RDD",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZCL",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "GBYTE",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NXS",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "MAID",
+	"tsym": "XMR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NXT",
+	"tsym": "XMR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "GNT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZEC",
+	"tsym": "XMR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "STEEM",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DASH",
+	"tsym": "XMR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTCD",
+	"tsym": "XMR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "GAS",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "FCT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "GNT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "CVC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTCD",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LTC",
+	"tsym": "XMR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XLM",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "REP",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "CVC",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTM",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DCR",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LSK",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SYS",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XRP",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BCN",
+	"tsym": "XMR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XMR",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DASH",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LTC",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZEC",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BNT",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "GAME",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETC",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BCN",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "PAY",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "STEEM",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "WAVES",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LTC",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NXT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "EOS",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "MAID",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DASH",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "AE",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BNT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DOGE",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "MAID",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DGB",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "EMC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BCN",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "STRAT",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ARDR",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XEM",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NXT",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "VERI",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DGD",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XDN",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "FUN",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DENT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DOGE",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZRX",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "VERI",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "STEEM",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZEC",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DGB",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "VERI",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DCN",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XVG",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DCN",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DGB",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XMR",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "VEN",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "CVC",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XDN",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DCN",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "TRX",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NEO",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "PAY",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "QTUM",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTC",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETH",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETC",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XRP",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTC",
+	"tsym": "JPY"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETH",
+	"tsym": "CAD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XRP",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XMR",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "REP",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETC",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETH",
+	"tsym": "JPY"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZEC",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ICN",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTC",
+	"tsym": "CAD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETH",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "GNO",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "REP",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DASH",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "GNO",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XMR",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETC",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZEC",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DASH",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "EOS",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "OMG",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NEO",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BCH",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BCH",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XRP",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTC",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETH",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LTC",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BCH",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTG",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTG",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BCH",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BCH",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "IOT",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NEO",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "WTC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "WTC",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "STRAT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETH",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ICN",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "GAS",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "OMG",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NEO",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SNT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "IOT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "FUN",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZRX",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "IOT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "OMG",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "FUN",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZRX",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XVG",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTC",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "STRAT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XVG",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LINK",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "KNC",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LINK",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BNB",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "KNC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BNB",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SALT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SALT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "QTUM",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "QTUM",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "QTUM",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SUB",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTC",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LTC",
+	"tsym": "EUR"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETH",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BCH",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LTC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "POWR",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "POWR",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "USDT",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "QASH",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "QASH",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "QASH",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XEM",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XEM",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "AION",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "AION",
+	"tsym": "BNB"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "AION",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ELF",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ELF",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ELF",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ENG",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ENG",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NEBL",
+	"tsym": "BNB"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NEBL",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "NEBL",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETHOS",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETHOS",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ICX",
+	"tsym": "USDT"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "TRX",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "TRX",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "EOS",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XRP",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XRP",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ADA",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ADA",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "VEN",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "VEN",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ICX",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ICX",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "HSR",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SNT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "HSR",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETC",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "EOS",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "EOS",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "REQ",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DASH",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DASH",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "REQ",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTS",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTS",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LSK",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XMR",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XMR",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SUB",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "SUB",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BAT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LRC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BAT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LRC",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "PPT",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZEC",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTG",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BTG",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "PPT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "GXS",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ZEC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ARK",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ARK",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "KMD",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XZC",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "BNT",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "WAVES",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "DGD",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "XLM",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
 	"fsym": "XLM",
 	"tsym": "ETH"
   }

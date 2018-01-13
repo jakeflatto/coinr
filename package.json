@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "node ./getHourlyHistory/main.js",
-    "scrape": "node ./scrapeMarketData/findCombos.js"
+    "getcombos": "node ./scrapeMarketData/getCombos.js"
   },
   "repository": {
     "type": "git",

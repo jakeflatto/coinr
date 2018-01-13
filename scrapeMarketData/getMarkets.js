@@ -5,7 +5,6 @@ const acceptedExchanges = [
 	'Binance',
 	'Bitfinex',
 	'Bittrex',
-	'Huobi',
 	'Poloniex',
 	'Okex',
 	'Kraken',
