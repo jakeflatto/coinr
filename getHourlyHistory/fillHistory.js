@@ -1,14 +1,14 @@
 const CryptoAPI = require('cryptocompare');
 global.fetch = require('node-fetch');
 const pg = require('pg');
-const client = new pg.Client({
-	user: 'postgres',
-	host: 'localhost',
-	database: 'coinr',
-	password: process.env.POSTGRES,
-	port: 5432
-});
-client.connect();
+// const client = new pg.Client({
+// 	user: 'postgres',
+// 	host: 'localhost',
+// 	database: 'coinr',
+// 	password: process.env.POSTGRES,
+// 	port: 5432
+// });
+// client.connect();
 
 const limit = 2000;
 const decrementValue = 3600 * 2001 * 1000;
@@ -95,7 +95,7 @@ function apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchang
 function submitPostgres(data) {
 	let formattedValues = data.map(obj => formatValue(obj));
 	let query = formatQuery(formattedValues);
-	
+
 	return new Promise((resolve,reject) => {
 		client.query(query, (err, res) => {
 			if(err)

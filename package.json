@@ -4,8 +4,8 @@
   "description": "Cryptocurrency Optimizer for Investment and Return",
   "main": "main.js",
   "scripts": {
-    "start": "node ./main.js",
-
+    "start": "node ./getHourlyHistory/main.js",
+    "scrape": "node ./scrapeMarketData/findCombos.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   "dependencies": {
     "aws-sdk": "^2.177.0",
     "cryptocompare": "^0.3.0",
+    "fs-extra": "^5.0.0",
     "node-fetch": "^1.7.3",
-    "pg": "^7.4.1"
+    "pg": "^7.4.1",
+    "tabletojson": "^0.6.0"
   }
 }
