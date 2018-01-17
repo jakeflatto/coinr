@@ -3298,5 +3298,30 @@
 	"exchange": "CCCAGG",
 	"fsym": "XLM",
 	"tsym": "ETH"
+  },
+  {
+	"exchange": "Bittrex",
+	"fsym": "BTS",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "Bittrex",
+	"fsym": "BTS",
+	"tsym": "ETH"
+  },
+  {
+	"exchange": "GDAX",
+	"fsym": "BCH",
+	"tsym": "USD"
+  },
+  {
+	"exchange": "Coinone",
+	"fsym": "IOT",
+	"tsym": "KRW"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "IOT",
+	"tsym": "KRW"
   }
 ]

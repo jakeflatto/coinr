@@ -1,0 +1,17 @@
+[
+  {
+	"exchange": "CCCAGG",
+	"fsym": "LTC",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "ETH",
+	"tsym": "BTC"
+  },
+  {
+	"exchange": "CCCAGG",
+	"fsym": "QTUM",
+	"tsym": "BTC"
+  }
+]

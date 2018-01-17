@@ -4,7 +4,7 @@
   "description": "Cryptocurrency Optimizer for Investment and Return",
   "main": "main.js",
   "scripts": {
-    "start": "node ./getHourlyHistory/main.js",
+    "start": "node ./getHourlyHistory/getHourly.js",
     "getcombos": "node ./scrapeMarketData/getCombos.js"
   },
   "repository": {

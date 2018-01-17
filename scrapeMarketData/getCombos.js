@@ -74,7 +74,7 @@ async function updateFile() {
 		return markets.length;
 	}
 	// JSON already exists, only add if in top 80 coins
-	markets = await filterMarkets(80);
+	markets = await filterMarkets(50);
 	// Add net changes to JSON
 	let deltaMarkets = markets.filter(market => {
 		return !jsonContents.some(compare => compare.exchange === market.exchange && compare.fsym === market.fsym && compare.tsym === market.tsym);
