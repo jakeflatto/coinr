@@ -1,15 +1,6 @@
 const CryptoAPI = require('cryptocompare');
 global.fetch = require('node-fetch');
-const pg = require('pg');
-const client = new pg.Client({
-	user: 'postgres',
-	host: 'localhost',
-	// host: '10.0.1.2',
-	database: 'coinr',
-	password: process.env.POSTGRES,
-	port: 5432
-});
-client.connect();
+const submitPostgres = require('../submitPostgres/submitPostgres');
 
 const limit = 2000;
 const decrementValue = 3600 * 2001 * 1000;
@@ -35,7 +26,7 @@ function recursivelyCall(currentFSym, currentTSym, currentTimestamp, currentExch
 			}
 			
 			// Write to Database
-			submitPostgres(dataList).then(() => {
+			submitPostgres('test2', dataList).then(() => {
 				let info = dataList.slice();
 				console.log(dataList.length);
 				console.log(`${new Date(info[info.length-1].hour_marker).toUTCString()} - ${new Date(info[0].hour_marker).toUTCString()}`);
@@ -75,36 +66,4 @@ async function apiIteration(currentFSym, currentTSym, currentTimestamp, currentE
 		};
 	}).filter(obj => !!obj.high);
 	return formatData;
-};
-
-function submitPostgres(data) {
-	let formattedValues = data.map(obj => formatValue(obj));
-	let query = formatQuery(formattedValues, 'test');
-
-	return new Promise((resolve,reject) => {
-		client.query(query, (err, res) => {
-			if(err)
-				reject(err);
-			else
-				resolve(res);
-		});
-	});
-};
-
-function formatQuery(values, table) {
-	return `INSERT INTO ${table} VALUES ${values.join(',')};`;
-}
-
-function formatValue(obj) {
-	// console.log(obj);
-	return `(TIMESTAMP '${new Date(obj.hour_marker).toISOString().replace('T',' ').replace('Z','')}',
-	'${obj.traded_with}',
-	'${obj.traded_for}',
-	'${obj.exchange}',
-	${obj.open},
-	${obj.high},
-	${obj.low},
-	${obj.close},
-	${obj.volume_traded_with},
-	${obj.volume_traded_for})`.replace(/\s+/g, ' ');
 };
