@@ -9,7 +9,7 @@ const client = new pg.Client({
 	password: process.env.POSTGRES,
 	port: 5432
 });
-client.connect();
+// client.connect();
 
 let totalRows = 0;
 

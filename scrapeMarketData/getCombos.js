@@ -7,18 +7,23 @@ async function filterMarkets(coinLimit) {
 	if(coinLimit)
 		coins = coins.slice(0, coinLimit);
 	coins = coins.map(coin => coin.symbol);
-	let markets = await getMarkets();
-	markets = markets.filter(market => {
+	let markets = (await getMarkets()).filter(market => {
 		return coins.includes(market.fsym);
 	}).map(market => {
 		delete market.volume_USD;
 		delete market.rate;
 		return market;
 	});
-	// Strip out edge cases
+	// LiveCoinWatch doesn't have all Binance USDT markets
+	let testUSDT = markets.filter(market => market.exchange === 'Binance' && market.tsym === 'USDT');
+	testUSDT = testUSDT.map(market => market.fsym);
+	!testUSDT.includes('LTC') ? markets.push({ exchange: 'Binance', tsym: 'USDT', fsym: 'LTC' }) : null;
+	!testUSDT.includes('BCH') ? markets.push({ exchange: 'Binance', tsym: 'USDT', fsym: 'BCH' }) : null;
+	!testUSDT.includes('NEO') ? markets.push({ exchange: 'Binance', tsym: 'USDT', fsym: 'NEO' }) : null;
+	// Handle edge cases
 	markets = addCCCAGG(markets).filter(market => {
 		return !(
-			(market.tsym === 'USDT' && market.exchange !== 'CCCAGG') ||
+			(market.tsym === 'USDT' && !market.exchange.match(/(CCCAGG)|(Okex)|(Binance)/i)) ||
 			(market.fsym === 'QTUM' && market.exchange === 'Bithumb') ||
 			(market.fsym === 'EOS' && market.exchange === 'Bithumb') ||
 			(market.fsym === 'XRP' && market.exchange === 'Korbit') ||
@@ -85,6 +90,8 @@ async function updateFile() {
 	}
 	console.log(`Adding ${deltaMarkets.length} new combination${deltaMarkets.length > 1 ? 's' : ''}.`);
 	deltaMarkets.forEach(newMarket => jsonContents.push(newMarket));
+	// Sort based on Exchange name
+	jsonContents = jsonContents.sort((a, b) => a.exchange.toLowerCase() > b.exchange.toLowerCase() ? 1 : -1);
 	await fs.writeFile(filePath, JSON.stringify(jsonContents));
 	console.log('Updating file...');
 	return jsonContents.length;

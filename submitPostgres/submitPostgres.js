@@ -14,7 +14,7 @@ function formatQuery(rows, table) {
 async function submitPostgres(client, table, rows) {
 	let query = formatQuery(rows, table);
 	
-	await client.query(query);
+	// await client.query(query);
 };
 
 module.exports = submitPostgres;
