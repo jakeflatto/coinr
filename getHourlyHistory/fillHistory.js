@@ -5,9 +5,9 @@ const limit = 2000;
 const decrementValue = 3600 * 2001 * 1000;
 
 // Each API call iteration
-async function apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchange) {
+async function apiIteration(currentFSym, currentTSym, currentTimestamp, endTimestamp, currentExchange) {
 	let data = await CryptoAPI.histoHour(currentFSym, currentTSym, { limit, timestamp: new Date(currentTimestamp), exchange: currentExchange });
-	data = data.filter(obj => !!obj.high);
+	data = data.filter(obj => !!obj.high && obj.time > endTimestamp / 1000);
 	if(!data.length)
 		return [];
 	
@@ -30,9 +30,9 @@ async function apiIteration(currentFSym, currentTSym, currentTimestamp, currentE
 	return formatData;
 };
 
-// Entire combo history
-async function fillHistory(currentFSym, currentTSym, currentTimestamp, currentExchange, rowCount, client) {
-	let rowsList = await apiIteration(currentFSym, currentTSym, currentTimestamp, currentExchange);
+// Entire history for current combo
+async function fillHistory(currentFSym, currentTSym, currentTimestamp, endTimestamp, currentExchange, rowCount, client, table) {
+	let rowsList = await apiIteration(currentFSym, currentTSym, currentTimestamp, endTimestamp, currentExchange);
 	rowCount += rowsList.length;
 	currentTimestamp -= decrementValue;
 	
@@ -43,8 +43,8 @@ async function fillHistory(currentFSym, currentTSym, currentTimestamp, currentEx
 	}
 	
 	// Write to Database
-	await submitPostgres(client, 'test2', rowsList);
-	let nextCount = await fillHistory(currentFSym, currentTSym, currentTimestamp, currentExchange, rowCount, client);
+	await submitPostgres(client, table, rowsList);
+	let nextCount = await fillHistory(currentFSym, currentTSym, currentTimestamp, endTimestamp, currentExchange, rowCount, client, table);
 	return nextCount;
 }
 

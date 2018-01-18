@@ -4,7 +4,7 @@ function formatQuery(rows, table) {
 	let formattedValues = rows.map(row => {
 		return `(${row.map(value => {
 			if(value instanceof Date)
-				return `TIMESTAMP '${value.toISOString()}'`;
+				return `TIMESTAMP '${value.toUTCString()}'`;
 			return `'${value}'`;
 		}).join(',')})`;
 	});
@@ -14,7 +14,7 @@ function formatQuery(rows, table) {
 async function submitPostgres(client, table, rows) {
 	let query = formatQuery(rows, table);
 	
-	// await client.query(query);
+	await client.query(query);
 };
 
 module.exports = submitPostgres;

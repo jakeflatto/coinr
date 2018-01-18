@@ -1,5 +1,6 @@
 const fillHistory = require('./fillHistory');
 const fs = require('fs-extra');
+const moment = require('moment');
 const pg = require('pg');
 const client = new pg.Client({
 	user: 'postgres',
@@ -9,32 +10,34 @@ const client = new pg.Client({
 	password: process.env.POSTGRES,
 	port: 5432
 });
-// client.connect();
-
-let totalRows = 0;
+client.connect();
 
 // Recursively run through every combination
-async function recursiveIteration(combos, index) {
-	const startTimestamp = new Date('Mon, 01 Jan 2018 00:00:00 GMT').getTime();
+async function iterateCombo(combos, index, totalRows, table) {
 	let combo = combos[index];
 	if(!combo)
-		return true;
+		return totalRows;
+	const startTimestamp = moment(new Date()).startOf('hour').valueOf();
+	let endTimestamp = await client.query(`SELECT MAX(hour_marker) FROM ${table} WHERE traded_with='${combo.tsym}' AND traded_for='${combo.fsym}' AND exchange='${combo.exchange}';`);
+	endTimestamp = endTimestamp.rows[0].max;
+	endTimestamp = new Date(endTimestamp).getTime();
 	
 	console.log(`${index+1}/${combos.length}\n${combo.exchange}-${combo.tsym}-${combo.fsym}`);
-	let rowCount = await fillHistory(combo.fsym, combo.tsym, startTimestamp, combo.exchange, 0, client);
+	let rowCount = await fillHistory(combo.fsym, combo.tsym, startTimestamp, endTimestamp, combo.exchange, 0, client, table);
 	totalRows += rowCount;
 	console.log(`Rows Added: ${rowCount}\nRunning Total: ${totalRows}\n------------------`);
-	return recursiveIteration(combos, index+1)
+	
+	return await iterateCombo(combos, index+1, totalRows, table)
 }
 
-// Run through all combos
-async function recursivelyRun() {
+// Provides list of combinations to run through
+async function recursivelyRun(table) {
 	let combinations = JSON.parse(await fs.readFile('./combos.json'));
-	await recursiveIteration(combinations, 0);
+	return await iterateCombo(combinations, 0, 0, table);
 }
 
 // Actually execute
-recursivelyRun().then(() => {
+recursivelyRun('price_histories_hourly').then(totalRows => {
 	console.log(`FINISHED HOURLY HISTORY!!\nTotal Rows: ${totalRows}`);
 	client.end();
 	process.exit();

@@ -10,7 +10,6 @@ const acceptedExchanges = [
 	'Kraken',
 	'GDAX',
 	'HitBTC',
-	'Coinone',
 	'Korbit',
 	'Bitstamp',
 	'Gemini'
