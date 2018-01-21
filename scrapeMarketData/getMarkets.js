@@ -1,4 +1,4 @@
-const scrapePage = require('./scrapePage');
+const scraper = require('./scraper');
 const getCoins = require('./getTopCoins');
 const acceptedExchanges = [
 	'Bithumb',
@@ -16,7 +16,7 @@ const acceptedExchanges = [
 ];
 
 async function getMarkets() {
-	let table = await scrapePage('https://www.livecoinwatch.com/markets');
+	let table = await scraper.scrapeTable('https://www.livecoinwatch.com/markets');
 
 	return table.map(record => {
 		let fsym = record.Market.split('/')[0];

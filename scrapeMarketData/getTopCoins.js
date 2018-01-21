@@ -1,7 +1,7 @@
-const scrapePage = require('./scrapePage');
+const scraper = require('./scraper');
 
 async function getLiveCoinWatch() {
-	let table = await scrapePage('https://www.livecoinwatch.com/');
+	let table = await scraper.scrapeTable('https://www.livecoinwatch.com/');
 
 	return table.map(record => {
 		return {
@@ -21,7 +21,7 @@ async function getLiveCoinWatch() {
 };
 
 async function getCoinMarketCap() {
-	let table = await scrapePage('https://www.coinmarketcap.com/');
+	let table = await scraper.scrapeTable('https://www.coinmarketcap.com/');
 
 	return table.map(record => {
 		let symbol = record.Name.trim().split(/\s+/g)[0];
