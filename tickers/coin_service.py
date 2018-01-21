@@ -1,7 +1,7 @@
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
-from datetime import date, datetime
+import datetime
 from coin_ticker import CoinTicker
 from sqlalchemy import create_engine
 import psycopg2
@@ -53,7 +53,7 @@ class CoinServicePG:
 
 	# def get_coin_data(self,ticker_symbol):
 	@classmethod
-	def get_coin_data(cls,ticker_symbol,traded_with):
+	def get_coin_data(cls,ticker_symbol,traded_with,start_date=datetime.datetime.now().date()-datetime.timedelta(days=1),end_date=datetime.datetime.now().date()):
 		pg_password = cls.get_pg_password()
 		pg_username = cls.get_pg_username()
 		pg_host = cls.get_pg_host()
@@ -67,8 +67,8 @@ class CoinServicePG:
 
 		pg_engine = cls.get_pg_engine(connection_dict)
 		
-		query = 'SELECT * FROM price_histories_hourly WHERE exchange=\'{}\' AND traded_for=\'{}\' AND traded_with=\'{}\''.format('CCCAGG',ticker_symbol,traded_with)
-
+		query = 'SELECT * FROM price_histories_hourly WHERE exchange=\'{}\' AND traded_for=\'{}\' AND traded_with=\'{}\' AND hour_marker BETWEEN \'{}\' AND \'{} 23:00\';'.format('CCCAGG',ticker_symbol,traded_with,start_date,end_date)
+		
 		query_results = pd.read_sql_query(query,con=pg_engine,index_col='hour_marker')
 
 		return query_results
@@ -89,4 +89,4 @@ class CoinServicePG:
 		# 	return coin_ticker
 
 			# return a new coin_ticker instance populated with response data
-print(CoinServicePG.get_coin_data('ADA','BTC').head())
+# print(CoinServicePG.get_coin_data('ADA','BTC','2018-01-01','2018-01-02').head())
