@@ -5,6 +5,8 @@ function formatQuery(rows, table) {
 		return `(${row.map(value => {
 			if(value instanceof Date)
 				return `TIMESTAMP '${value.toUTCString()}'`;
+			if(value === null)
+				return 'NULL'
 			return `'${value}'`;
 		}).join(',')})`;
 	});
@@ -13,7 +15,6 @@ function formatQuery(rows, table) {
 
 async function submitPostgres(client, table, rows) {
 	let query = formatQuery(rows, table);
-	
 	await client.query(query);
 };
 

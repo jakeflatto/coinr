@@ -4,8 +4,9 @@
   "description": "Cryptocurrency Optimizer for Investment and Return",
   "main": "main.js",
   "scripts": {
-    "start": "node ./getHourlyHistory/getHourly.js",
-    "getcombos": "node ./scrapeMarketData/getCombos.js"
+    "getHourly": "node ./getHourlyHistory/getHourly.js",
+    "getCMM": "node ./scrapeMarketVolume/scrapeArchive.js",
+    "getCombos": "node ./scrapeMarketData/getCombos.js"
   },
   "repository": {
     "type": "git",
